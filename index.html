@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temporizador</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mb-4">Temporizador</h1>
+    <div class="form-group">
+      <label for="inputTime">Ingrese el tiempo (en segundos):</label>
+      <input type="number" class="form-control" id="inputTime" placeholder="Tiempo en segundos">
+    </div>
+    <div class="text-center mt-3">
+      <button class="btn btn-primary mr-2" onclick="startTimer()">Iniciar</button>
+      <button class="btn btn-secondary mx-2" onclick="pauseTimer()">Pausar</button>
+      <button class="btn btn-danger ml-2" onclick="resetTimer()">Reset</button>
+    </div>
+    <div class="text-center mt-4">
+      <h2 id="timerDisplay">00:00</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
